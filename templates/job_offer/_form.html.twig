@@ -1,0 +1,46 @@
+<div style="padding:80px;background:#fff;">
+
+    {{ form_start(form) }}
+    <div class="input-field col s12 l7">
+        {{ form_label(form.jobReference, 'jobReference') }}
+        {{ form_widget(form.jobReference) }}
+    </div>
+    <div class="input-field col s12 l5">
+        {{ form_label(form.nameSociety, 'nameSociety') }}
+        {{ form_widget(form.nameSociety) }}
+    </div>
+    <div class="input-field col s12 l12">
+        {{ form_label(form.email, 'email') }}
+        {{ form_widget(form.email) }}
+    </div>
+    <div class="input-field col s12 l12">
+        {{form_label(form.phone)}}
+        {{ form_widget(form.phone) }}
+    </div>
+    <div class="input-field col s12 l7">
+        {{ form_label(form.description, 'description') }}
+        {{ form_widget(form.description) }}
+    </div>
+    <div class="input-field col s12 l5">
+        {{ form_label(form.notes, 'notes') }}
+        {{ form_widget(form.notes) }}
+    </div>
+    <div class="input-field col s12 l12">
+        {{ form_label(form.jobTitle, 'jobTitle') }}
+        {{ form_widget(form.jobTitle) }}
+    </div>
+    <div class="input-field col s12 l12">
+        {{form_label(form.jobCategorie,'jobCategorie')}}
+        {{ form_widget(form.jobCategorie) }}
+    </div>
+    <div class="input-field col s12 l12">
+        {{ form_label(form.jobType, 'jobType') }}
+        {{ form_widget(form.jobType) }}
+    </div>
+    <button class="btn btn-large waves-effect waves-light pink lighten-1 col s12" name="action" style="margin-top: 20px;" type="submit">
+        Publier l'annonce
+
+        <i class="material-icons right">Publier</i>
+    </button>
+    {{ form_end(form) }}
+</div>
